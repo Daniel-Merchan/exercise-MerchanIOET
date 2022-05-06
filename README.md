@@ -1,4 +1,4 @@
-#============================SCHEDULE COINCIDENCES SOFWARE=============================
+#============================SCHEDULE COINCIDENCES APP=============================
 #======================================================================================
 
 #================================OVERVIEW==============================================
@@ -21,7 +21,7 @@ The software uses 4 functions, wich are:
 
 #======================================Runnig app================================
 To run properly the app, the following steps has to be done:
-	1. Download the file project at github link: --------------------
+	1. Download the file project at github link: https://github.com/Daniel-Merchan/exercise-MerchanIOET
 	2. In the project directory, you have to run:	
 		- npm install
 		- npm start
