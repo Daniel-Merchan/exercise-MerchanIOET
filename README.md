@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+#============================SCHEDULE COINCIDENCES SOFWARE=============================
+#======================================================================================
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#================================OVERVIEW==============================================
+This project has been developed for get the schedule employes coincidences based on a txt file.
+With a simple UI, users have to load the schedule of employes inside a file with .txt extension following the format established.
+Example:
+RENE=MO10:15-12:00,TU10:00-12:00,TH01:00-03:00,SA14:00-18:00,SU20:00-21:00
+ASTRID=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
+ANDRES=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00
 
-## Available Scripts
+Automatically, the app will show the schedule coincidences between employes.
+#======================================Sofware Structure=============================
+The software uses 4 functions, wich are:
+	- Load txt function.- Based on an event, this function load and read the txt schedule file.
+	- Schedule epmloyes function.- This function generates an array of the emplyes schedules using the break line as the element to define elements of array
+	- Employes Matrix.- With previus function we cant compare all schedule employes directly due the format of times schedule. With this function we prepare
+	   			  the employes matrix to be compare and get the coincidences. The function separates the employes and his schedules as elements of matrix,then
+				  all the schedules will be compare ti find all the coincidences.
+	- getCoincidences.- This function needs two paramteres wich are two arrays (one for employe) provided by the previus function, then we show the coincidences.
 
-In the project directory, you can run:
+#======================================Runnig app================================
+To run properly the app, the following steps has to be done:
+	1. Download the file project at github link: --------------------
+	2. In the project directory, you have to run:	
+		- npm install
+		- npm start
+	3.- Open [http://localhost:3000]
+	4.- Click on choose file button.
+	5.- Select txt schedule file.(you can use the imput1 and input2 txt files provided inside the project folder)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
